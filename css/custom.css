@@ -1,7 +1,17 @@
 body {
-	background-color:lightgrey;
+	background: rgb(129,129,129);
+	background: linear-gradient(90deg, rgba(129,129,129,1) 6%, rgba(158,158,158,1) 18%, rgba(177,177,177,1) 32%, 
+	rgba(212,212,212,1) 50%, rgba(177,177,177,1) 67%, rgba(158,158,158,1) 83%, rgba(129,129,129,1) 94%);
 }
 
-.nav-link{
-	
+.navbar {
+	opacity: 0.4;
+}
+
+.nav-link:hover, .nav-link:focus {
+	background-color:black;
+}
+
+.makewhite{
+	color:white;
 }
