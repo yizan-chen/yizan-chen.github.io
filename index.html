@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" href="css/custom.css" >
 
-    <title>WOW! A Website</title>
+    <title>Yizan Personal Site</title>
   </head>
   <body>
 
+		
 	<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
 	  <a class="navbar-brand" href="#">
     <img src="img/icon.bmp" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -24,51 +25,118 @@
         <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
             <div class="navbar-nav mr-5" >
                 <a class="nav-item nav-link text-white" href="index.html" >Home</a>
-                <a class="nav-item nav-link text-white" href="">Projects</a>
-                <a class="nav-item nav-link text-white" href="">About</a>
+                <a class="nav-item nav-link text-white" href="sites/project.html">Projects</a>
+                <a class="nav-item nav-link text-white" href="sites/about.html">About</a>
             </div>
         </div>
 	</nav>
 
-	<div class="d-flex justify-content-center container mt-3">
-		<h2>Welcome to my site</h2>
+	<div class="text-center big mb-5">
+		<div class="intro">
+				<h1 >Welcome to my site!</h1> 
+				<p>This site is <strong onclick="moveTo(first)" data-toggle="tooltip" 
+					data-placement="bottom" title="Move to content section">About</strong> me.</p>
+		</div>
+	</div>
+
+	<div class="body" >
+	<div class="container" id="first">
+		<h1>Welcome to my site</h1> 
+	</div>
+
+	<div class="container mt-5 p-4 outline" id="education">
+		<h2>Education</h2> 
+		<p>I went to <a href="https://manoa.hawaii.edu/">University of Hawaii at Manoa</a>
+			at Hawaii and obtained my Bachelor of Science in Computer Science.<br>
+			I took classses in Web Desgin, AI/Machine Learning, Parallel/Multithreading Programming, 
+			Operating Systems, Data Networks, Data storage. 
+		</p>
+	</div>
+
+	<div class="container mt-5 p-4 outline" id="language">
+		<h2>Experienced Language/Tools</h2>
+		<p>Java, JavaScript, HTML5, C/C++, Python, Prolog, cLisp, x32 Assembly, SQL, jquery</p>
+		<p>Semantic UI, MongoDB, Meteor, Bootstrap</p>
+	</div>
+
+	<div class="container mt-5 p-4 outline" id="project">
+		<h2>Class works/projects</h2>
+		<div class="accordion" id="accordion">
+			<div class="card">
+			  <div class="card-header" id="headingOne">
+				  <div data-toggle="collapse" data-target="#collapseOne">
+					Warrior Gamers
+				  </div>
+			  </div>
+			  <div id="collapseOne" class="collapse" data-parent="#accordion">
+				<div class="card-body">
+					what is in
+					<a href="https://314gb.github.io/" class="card-link">Link to project site</a>
+				</div>
+			  </div>
+			</div>
+
+			<div class="card">
+					<div class="card-header" id="headingTwo">
+						<div data-toggle="collapse" data-target="#collapseTwo">
+						  Hawaii Alert
+						</div>
+					</div>
+					<div id="collapseTwo" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						  what is in
+						  <a href="https://github.com/HawaiiAlert/HawaiiAlert" 
+						  class="card-link">Link to project github repo</a>
+					  </div>
+					</div>
+				  </div>
+
+			<div class="card">
+					<div class="card-header" id="headingThree">
+						<div data-toggle="collapse" data-target="#collapseThree">
+						  ICS 361 final
+						</div>
+					</div>
+					<div id="collapseThree" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						  what is in
+					  </div>
+					</div>
+				  </div>	  
+			</div>
+
+			<div class="card">
+					<div class="card-header" id="headingFour">
+						<div data-toggle="collapse" data-target="#collapseFour">
+						  ICS 461 final
+						</div>
+					</div>
+					<div id="collapseFour" class="collapse" data-parent="#accordion">
+					  <div class="card-body">
+						  what is in
+						  {% octicon mark-github %}
+					  </div>
+					</div>
+				  </div>
+	</div>
+
+	<div style="padding-bottom:500px;">
+			{% octicon mark-github %}
+	</div>
+
 	</div>
 
 
-	<div class="d-flex justify-content-center mt-2">
-		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-	  <div class="carousel-inner" >
-		<div class="carousel-item active">
-		  <img src="img/white.bmp" alt="First slide">
-		</div>
-		<div class="carousel-item">
-		  <img src="img/white.bmp" alt="Second slide">
-		</div>
-		<div class="carousel-item">
-		  <img src="img/white.bmp" alt="Third slide">
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-	  </a>
-	</div>
+
+	<div class="footer">
+			Updated 2018
 	</div>
 
-	<div class="container mt-3 card">
-		<p>What I got here </p>
-	</div>
-	
-	
-	</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/custom.js"></script>
   </body>
 </html>
