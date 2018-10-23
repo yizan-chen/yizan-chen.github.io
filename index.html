@@ -15,7 +15,7 @@
 
 		
 	<nav class="navbar navbar-dark navbar-expand-lg bg-dark sticky-top">
-	  <a class="navbar-brand" href="#">
+	  <a class="navbar-brand">
     <img src="img/icon.bmp" width="30" height="30" class="d-inline-block align-top" alt="">
 	</a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,8 +25,8 @@
         <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
             <div class="navbar-nav mr-5" >
                 <a class="nav-item nav-link text-white" href="index.html" >Home</a>
-                <a class="nav-item nav-link text-white" href="sites/project.html">Projects</a>
-                <a class="nav-item nav-link text-white" href="sites/about.html">About</a>
+                <a class="nav-item nav-link text-white pointer" onclick="moveTo(project)">Projects</a>
+                <a class="nav-item nav-link text-white pointer" onclick="moveTo(contact)">Contact</a>
             </div>
         </div>
 	</nav>
@@ -63,28 +63,45 @@
 		<h2>Class works/projects</h2>
 		<div class="accordion" id="accordion">
 			<div class="card">
-			  <div class="card-header" id="headingOne">
+			  <div class="card-header pointer" id="headingOne">
 				  <div data-toggle="collapse" data-target="#collapseOne">
 					Warrior Gamers
 				  </div>
 			  </div>
-			  <div id="collapseOne" class="collapse" data-parent="#accordion">
+			  <div id="collapseOne" class="collapse show" data-parent="#accordion">
 				<div class="card-body">
-					what is in
+					<p>
+						This is the final group project in the Software Engineering class. The objective of this project is to design and create a 
+						completely functional website following the code development cycle and concepts with Github. In the end, we created a gamer 
+						forum website that our university student can log in using their university account. Users of our site can create portfolios 
+						to share their gaming interests and find others with similar interests in the local community. The website will rank games by their 
+						popularity using our user database, and let’s user post real-life event on our site. Each member of the development team gain experience on both front-end and back-end.
+					</p>
+					<p>Keyword: Web, font-end, back-end, Github, JavaScript, HTML, Semantic UI, API</p>
 					<a href="https://314gb.github.io/" class="card-link">Link to project site</a>
 				</div>
 			  </div>
 			</div>
 
 			<div class="card">
-					<div class="card-header" id="headingTwo">
+					<div class="card-header pointer" id="headingTwo">
 						<div data-toggle="collapse" data-target="#collapseTwo">
 						  Hawaii Alert
 						</div>
 					</div>
 					<div id="collapseTwo" class="collapse" data-parent="#accordion">
 					  <div class="card-body">
-						  what is in
+						  <p> 
+									This is a group project in the Software Design class. This project was inspired by 
+									the false nuclear missile alert event in Hawaii, which created major panic and fear 
+									in the morning. The mistake was blamed on the bad UI design of the alert system and 
+									took them hours to sent clarification out after the false alert. So, our objective is 
+									to design a UI that will minimize human error and include to maximize response time 
+									to unexpected situations. Our end project was built on browser-based languages and agreed 
+									on a simple clear design. We did unit testing and implemented mobile text notification and
+									 email notification alert. I gained experience in product testing, UI design, and code development process.
+							</p>
+							<p>Keyword: Web, font-end, GUI, JavaScript, HTML, API, Testing</p>
 						  <a href="https://github.com/HawaiiAlert/HawaiiAlert" 
 						  class="card-link">Link to project github repo</a>
 					  </div>
@@ -92,37 +109,61 @@
 				  </div>
 
 			<div class="card">
-					<div class="card-header" id="headingThree">
+					<div class="card-header pointer" id="headingThree">
 						<div data-toggle="collapse" data-target="#collapseThree">
-						  ICS 361 final
+						  Natural language processing AI
 						</div>
 					</div>
 					<div id="collapseThree" class="collapse" data-parent="#accordion">
 					  <div class="card-body">
-						  what is in
+							<p> 
+								This is a project in the AI programming class. The goal of this project is to create a 
+								specialized AI that can answer human question and response in the English language. 
+								In this project, the AI will be specialized in answering questions about movies and 
+								their actors. But due to the limited amount of time and data, the final product will 
+								be limited to answer questions about the selected three movies and three actors in each 
+								movie. The language process will accept what, who and four other types of questions and 
+								will answer questions about actor, director, title, and role in each movie asking in various way.  
+							</p>
+							<p>Keyword: AI, Prolog, Language Processing</p>
+							<a href="https://github.com/yizanchen/ics361/tree/master/ass5" 
+						  class="card-link">Link to project github repo</a>
 					  </div>
 					</div>
 				  </div>	  
 			</div>
 
 			<div class="card">
-					<div class="card-header" id="headingFour">
+					<div class="card-header pointer" id="headingFour">
 						<div data-toggle="collapse" data-target="#collapseFour">
-						  ICS 461 final
+						  Support Vector Machine
 						</div>
 					</div>
 					<div id="collapseFour" class="collapse" data-parent="#accordion">
 					  <div class="card-body">
-						  what is in
-						  {% octicon mark-github %}
+							<p>
+								This is a project in the Machine Learning class. The focus of the class was on Support 
+								Vector Machine, to learn how it works and different variation of it. SVM(Support Vector 
+								Machine) is an algorithm used to separate data into groups using a given training data. 
+								It is a very efficient way to automatic the process of sorting large amounts of data. 
+								But there are many variables in the algorithm and no one fits all model. So, for my 
+								project, I compared different degrees of kernels and log the effect of overfitting and 
+								underfitting the data. I learned how to apply cross-validation to find the best degree for my human-generated data.    
+							</p>	
+							<p>Keywork: Python, SVM, Data analysis, Matlab </p>
+							<a href="https://github.com/yizanchen/ics435" 
+						  class="card-link">Link to project github repo</a>
 					  </div>
 					</div>
 				  </div>
 	</div>
 
-	<div style="padding-bottom:500px;">
-			{% octicon mark-github %}
-	</div>
+	<div class="container mt-5 mb-5 p-4 outline" id="contact">
+		<h2>Contact Information</h2>
+		<p>Contact me for any information or work opportunity</p>
+		<p>Email: yizanc@gmail.com</p>
+		<a href="https://github.com/yizanchen"> <img src="img/github.png"> </a>
+		<a href="https://www.linkedin.com/in/yizan-chen-402b2a144/"> <img src="img/linkedin.png"> </a>
 
 	</div>
 

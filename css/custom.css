@@ -49,6 +49,11 @@ body {
 strong{
 	color: white;
 }
+
 strong:hover, strong:focus{
+	cursor: pointer;
+}
+
+.pointer{
 	cursor: pointer;
 }
