@@ -1,9 +1,9 @@
 body {
-	background-color: rgb(17, 17, 17);
-	color: white;	
+	background-color: rgb(172, 172, 172);
+	color: black;	
 }
 .navbar {
-	opacity:0.5;
+	opacity:0.7;
 	background:no-repeat url(../img/bg.jpg) ;
 
 }
@@ -19,7 +19,7 @@ body {
 	color: white ;
 }
 
-.big{
+.front{
 	background:no-repeat url(../img/bg.jpg) ;
 	height: auto;
 	color: white;
@@ -28,22 +28,33 @@ body {
 
 .intro{
 	color:white;
-	padding-top: 300px;
+	padding-top: 250px;
 	padding-bottom: 450px;
 }
 
-.outline{
-	border:1px solid white;
-	border-radius: 5px;
+#education{
+	background-color: rgba(71, 81, 214, 0.801);
+}
+#language{
+	background-color: rgba(111, 182, 134, 0.781);
+}
+#project{
+	background-color:  rgba(71, 81, 214, 0.801);
+}
+#contact{
+	background-color: rgba(111, 182, 134, 0.781);
 }
 
+p{
+	font-size: 18px;
+}
 .card{
-	background:rgb(17, 17, 17);
-	border: 2px solid white;
+	background:rgba(112, 129, 116, 0.849);
+	border: 2px solid rgba(0, 0, 0, 0.829);
 }
 
 .card-body{
-	background:rgb(27, 27, 27);
+	background:rgb(201, 199, 199);
 }
 
 strong{
@@ -56,4 +67,11 @@ strong:hover, strong:focus{
 
 .pointer{
 	cursor: pointer;
+}
+
+a{
+	color: black;
+}
+a:hover, a:focus{
+	color: rgb(0, 0, 0);
 }

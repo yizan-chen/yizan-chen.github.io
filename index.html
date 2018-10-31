@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,8 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" >
-	<link rel="stylesheet" href="css/custom.css" >
+		<link rel="stylesheet" href="css/custom.css" >
 
+		<!-- Font Awesome icon -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+		<!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+		<![endif]-->
+	
     <title>Yizan Personal Site</title>
   </head>
   <body>
@@ -31,41 +38,48 @@
         </div>
 	</nav>
 
-	<div class="text-center big mb-5">
+	<header class="text-center front">
 		<div class="intro">
+				<h1 id="time"></h1>
 				<h1 >Welcome to my site!</h1> 
 				<p>This site is <strong onclick="moveTo(first)" data-toggle="tooltip" 
 					data-placement="bottom" title="Move to content section">About</strong> me.</p>
 		</div>
-	</div>
+	</header>
 
-	<div class="body" >
-	<div class="container" id="first">
-		<h1>Welcome to my site</h1> 
-	</div>
+	<header class="body" >
+	<div class="container p-4 text-center" id="first">
+		<h1 id="greeting">Welcome to my site</h1> 
+	</header>
 
-	<div class="container mt-5 p-4 outline" id="education">
-		<h2>Education</h2> 
+	<section id="education">
+		<div class="container p-5">
+		<h2 class="pb-3">Education</h2> 
 		<p>I went to <a href="https://manoa.hawaii.edu/">University of Hawaii at Manoa</a>
 			at Hawaii and obtained my Bachelor of Science in Computer Science.<br>
 			I took classses in Web Desgin, AI/Machine Learning, Parallel/Multithreading Programming, 
 			Operating Systems, Data Networks, Data storage. 
 		</p>
 	</div>
+	</section>
 
-	<div class="container mt-5 p-4 outline" id="language">
-		<h2>Experienced Language/Tools</h2>
-		<p>Java, JavaScript, HTML5, C/C++, Python, Prolog, cLisp, x32 Assembly, SQL, jquery</p>
+	<section  id="language">
+		<div class="container p-5 ">
+		<h2 class="pb-3">Experienced Language/Tools</h2>
+		<p>Java, JavaScript, HTML5, C/C++, Python, Prolog, cLisp, SQL, Jquery</p>
 		<p>Semantic UI, MongoDB, Meteor, Bootstrap</p>
 	</div>
+	</section>
 
-	<div class="container mt-5 p-4 outline" id="project">
-		<h2>Class works/projects</h2>
+	<section  id="project">
+		<div class="container p-5 ">
+		<h2 class="pb-3">Class works/projects</h2>
 		<div class="accordion" id="accordion">
 			<div class="card">
 			  <div class="card-header pointer" id="headingOne">
 				  <div data-toggle="collapse" data-target="#collapseOne">
-					Warrior Gamers
+					Warrior Gamers 
+					<i class="fas fa-angle-down"></i>
 				  </div>
 			  </div>
 			  <div id="collapseOne" class="collapse show" data-parent="#accordion">
@@ -81,12 +95,12 @@
 					<a href="https://314gb.github.io/" class="card-link">Link to project site</a>
 				</div>
 			  </div>
-			</div>
+					</div>
 
 			<div class="card">
 					<div class="card-header pointer" id="headingTwo">
 						<div data-toggle="collapse" data-target="#collapseTwo">
-						  Hawaii Alert
+						  Hawaii Alert <i class="fas fa-angle-down"></i>
 						</div>
 					</div>
 					<div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -111,7 +125,7 @@
 			<div class="card">
 					<div class="card-header pointer" id="headingThree">
 						<div data-toggle="collapse" data-target="#collapseThree">
-						  Natural language processing AI
+						  Natural language processing AI <i class="fas fa-angle-down"></i>
 						</div>
 					</div>
 					<div id="collapseThree" class="collapse" data-parent="#accordion">
@@ -131,12 +145,12 @@
 					  </div>
 					</div>
 				  </div>	  
-			</div>
+			
 
 			<div class="card">
 					<div class="card-header pointer" id="headingFour">
 						<div data-toggle="collapse" data-target="#collapseFour">
-						  Support Vector Machine
+						  Support Vector Machine <i class="fas fa-angle-down"></i>
 						</div>
 					</div>
 					<div id="collapseFour" class="collapse" data-parent="#accordion">
@@ -155,23 +169,26 @@
 						  class="card-link">Link to project github repo</a>
 					  </div>
 					</div>
-				  </div>
-	</div>
+					</div>
+		</div>
+		</div>
+				</section>
 
-	<div class="container mt-5 mb-5 p-4 outline" id="contact">
-		<h2>Contact Information</h2>
+	<section  id="contact">
+		<div class="container p-5 ">
+		<h2 class="pb-3">Contact Information</h2>
 		<p>Contact me for any information or work opportunity</p>
-		<p>Email: yizanc@gmail.com</p>
-		<a href="https://github.com/yizanchen"> <img src="img/github.png"> </a>
-		<a href="https://www.linkedin.com/in/yizan-chen-402b2a144/"> <img src="img/linkedin.png"> </a>
-
+		<p><i class="far fa-envelope"></i> Email: yizanc@gmail.com</p>
+		<a href="https://github.com/yizanchen">  <img src="img/github.png" data-toggle="tooltip" 
+			data-placement="auto" title="Github" > </a>
+		<a href="https://www.linkedin.com/in/yizan-chen-402b2a144/" > <img src="img/linkedin.png" data-toggle="tooltip" 
+			data-placement="auto" title="Linkedin"> </a>
 	</div>
+	</section>
 
-
-
-	<div class="footer">
+	<footer class="footer">
 			Updated 2018
-	</div>
+	</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
