@@ -15,9 +15,9 @@ function greet(time){
     if (time > 21 )
         grt = "Hello, how are the stars tonight?";
     else if(time > 16)
-        grt = "Good Afternoon";    
+        grt = "Good Evening";    
     else if(time > 11)
-        grt = "Good Evening";
+        grt = "Good Afternoon";
     else if(time > 4)
         grt = "Good Morning";
     document.getElementById("greeting").innerHTML = grt;
