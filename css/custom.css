@@ -1,16 +1,24 @@
+html{
+	scroll-behavior: smooth;
+}
 body {
-	background-color: rgb(172, 172, 172);
-	color: black;	
+	background-color: rgb(53, 53, 53);
+	color: rgb(211, 211, 211);	
 }
+
 .navbar {
-	opacity:0.7;
-	background:no-repeat url(../img/bg.jpg) ;
-
+	opacity:1;
+	background:rgb(0, 0, 0) ;
 }
 
-.nav-link:hover, .nav-link:focus {
-	background-color:rgb(81, 91, 180);
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
+	color:black;
+	background-color:rgba(211, 204, 204, 0.774);
 	border-radius: 5px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color:white;
 }
 
 .footer{
@@ -33,28 +41,31 @@ body {
 }
 
 #education{
-	background-color: rgba(71, 81, 214, 0.801);
+	background-color: rgba(24, 24, 24, 0.863);
 }
 #language{
-	background-color: rgba(111, 182, 134, 0.781);
+	background-color: rgb(51, 51, 51);
 }
 #project{
-	background-color:  rgba(71, 81, 214, 0.801);
+	background-color:  rgba(24, 24, 24, 0.863);
 }
 #contact{
-	background-color: rgba(111, 182, 134, 0.781);
+	background-color: rgba(0, 0, 0, 0.781);
+}
+.whiteBack{
+	background-color: white;
 }
 
 p{
 	font-size: 18px;
 }
 .card{
-	background:rgba(100, 167, 116, 0.904);
+	background:rgba(24, 23, 23, 0.527);
 	border: 2px solid rgba(0, 0, 0, 0.829);
 }
 
 .card-body{
-	background:rgb(201, 199, 199);
+	background:rgb(48, 47, 47);
 }
 
 strong{
@@ -70,10 +81,10 @@ strong:hover, strong:focus{
 }
 
 a{
-	color: black;
+	color: rgb(211, 211, 211);
 }
 a:hover, a:focus{
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 }
 
 .outline{
