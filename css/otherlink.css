@@ -14,11 +14,16 @@ img{
 }
 #number{
 	text-align: center;
-	font-size: 150px;
+	font-size: 100px;
+	height: 20vh;
 }
 #numlist{
-	font-size: 40px;
+	font-size: 30px;
+	height: 5vh;
 }
 .calculater{
+	font-size: 50px;
+}
+.money{
 	font-size: 50px;
 }
