@@ -30,20 +30,20 @@ function doCal(val){
     if(operation == '+'){
         money += val;
     }else money -= val;
-    document.getElementById('money').innerText=money;
+    document.getElementById('money').innerText='$ ' + money;
 }
 function clearM(){
     money = 0;
-    document.getElementById('money').innerText=money;
+    document.getElementById('money').innerText='$ ' +money;
 
 }
 function DoMTen(){
     money -=10;
-    document.getElementById('money').innerText=money;
+    document.getElementById('money').innerText='$ ' +money;
 }
 
 getnum();
 makeNum();
 
-document.getElementById('money').innerText=money;
+document.getElementById('money').innerText='$ ' +money;
 document.getElementById('operation').innerText=operation;
