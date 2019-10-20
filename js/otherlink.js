@@ -14,7 +14,7 @@ function changepic(){
 }
 
 function getnum(){
-    document.getElementById('numlist').innerText = numlist.join(' - ');    
+    document.getElementById('numlist').innerText = numlist.join('  -  ');    
 }
 
 getnum();
