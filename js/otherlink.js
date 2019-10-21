@@ -42,9 +42,16 @@ function DoMTen(){
     money -=10;
     document.getElementById('money').innerText='$ ' +money;
 }
+function inputnum(){
+    if(operation == '+'){
+        money += Number(document.getElementById('inputnum').value);
+    }else money -= document.getElementById('inputnum').value;
+    document.getElementById('money').innerText='$ ' + money;
+}
 
 getnum();
 makeNum();
 
 document.getElementById('money').innerText='$ ' +money;
 document.getElementById('operation').innerText=operation;
+console.log("good");

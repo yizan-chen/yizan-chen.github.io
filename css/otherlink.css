@@ -18,7 +18,7 @@ img{
 	height: 20vh;
 }
 #numlist{
-	font-size: 30px;
+	font-size: 25px;
 	height: 5vh;
 }
 .calculater{
@@ -26,4 +26,7 @@ img{
 }
 .money{
 	font-size: 50px;
+}
+.half{
+	width: 50%;
 }
