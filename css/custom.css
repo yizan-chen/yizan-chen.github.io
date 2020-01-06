@@ -21,6 +21,9 @@ img{
 	border-radius: 5px;
 }
 
+.dropdown-menu{
+	background-color: black;
+}
 .navbar .navbar-nav .nav-link {
     color:white;
 }
