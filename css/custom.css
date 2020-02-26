@@ -36,7 +36,7 @@ img{
 
 .front{
 	background:no-repeat url(../img/bg.jpg) ;
-	background-size: auto;
+	background-size: cover;
 	height: auto;
 	color: white;
 	border-bottom: 1px solid white;
