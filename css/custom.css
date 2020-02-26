@@ -35,7 +35,7 @@ img{
 }
 
 .front{
-	background:no-repeat url(../img/bg.jpg) ;
+	background:repeat url(../img/bg.jpg) ;
 	height: auto;
 	color: white;
 	border-bottom: 1px solid white;
