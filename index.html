@@ -21,9 +21,8 @@
 	
   <body>
 
-		
-	<nav class="navbar navbar-dark navbar-expand-lg sticky-top navbar-custom">
-		<a class="navbar-brand">Yizan Chen</a>
+	<nav id="nav" class="navbar navbar-dark navbar-expand-lg fixed-top navbar-custom">
+		<a class="navbar-brand">YC</a>
 		
 				<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" 
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,67 +32,63 @@
         <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
             <div class="navbar-nav mr-5" >
                 <a class="nav-item nav-link pointer" onclick="window.scrollTo(0,0)" >Home</a>
-								<a class="nav-item nav-link pointer" onclick="moveTo(education)">Education</a>
-								<a class="nav-item nav-link pointer" onclick="moveTo(language)">Experience</a>
-								<a class="nav-item nav-link pointer" onclick="moveTo(project)">Projects</a>
+								<a class="nav-item nav-link pointer" onclick="moveTo(projects)">Projects</a>
 								<a class="nav-item nav-link pointer" onclick="moveTo(contact)">Contact</a>
-								<li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									  Other
-									</a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<a class="dropdown-item nav-link" href="DiceCalculator.html">Dice Calculator</a>
-									</div>
-								  </li>
             </div>
         </div>
 	</nav>
 
-	<header class="text-center front">
-		<div class="intro">
+	<div class="front d-flex justify-content-center">
+		<div onclick="moveTo(projects)" class="text-center align-self-center intro pointer">
 				<h1 id="time"></h1>
-				<h1 >Welcome to my site!</h1> 
-				<p>This site is <strong onclick="moveTo(first)" data-toggle="tooltip" 
-					data-placement="bottom" title="Move to content section">About</strong> me.</p>
-		</div>
-	</header>
+				<h1 >Yizan Chen</h1> 
+				<p><strong >Click to view projects</strong></p>
+				<div class="animation_1"> <img class="downarrow" src="img/down-arrow.png" ></div>
 
-	<header class="body" >
-	<div class="container p-4 text-center" id="first">
-		<h1 id="greeting">Welcome to my site</h1> 
-	</header>
-
-	<section id="education">
-		<div class="container p-5">
-		<h2 class="pb-3">Education</h2> 
-		<div class="row">
-		<div class="col-lg-5 col-md-12 col-sm-12">
-			<img src="img/UHM.png" > </div>
-		<div class="col-lg-7 col-md-12 col-sm-12"> 
-			<p>Bachelor of Science in Computer Science from <a href="https://manoa.hawaii.edu/">University of Hawaii at Manoa</a><br>
-			<p>Classses in Web Desgin, AI/Machine Learning, Parallel/Multithreading Programming, 
-				Operating Systems, Data Networks, Data storage</p>
-		</p>
 		</div>
 	</div>
-	</div>
-	</section>
-
-	<section  id="language">
-		<div class="container p-5 ">
-		<h2 class="pb-3">Experienced Language/Tools</h2>
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12 pt-5">
-				<p>Java, JavaScript, HTML5, C/C++, Python, Prolog, cLisp, SQL</p>
-				<p>Semantic UI, MongoDB, Meteor, Bootstrap, Jquery, NodeJs</p>
+	
+	<div id='projects'>
+		<div class="row no-gutters project align-items-center">
+			<div class="col-12 col-md-5 ">
+				<div class="d-flex justify-content-center ">
+					<img class='projectImg ' src='img/WarriorGamers.png'> 
+				</div>	
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12" >
-					<img class="w-50" src="img/pg.png">
+			<div class="col-12 col-md-7">
+				<div class="project_text">
+					<h2>Warrior Gamers</h2>
+					Full stack web group project built with React and MangoDB. WarriorGamers let university students create personal portfolios to share their gaming experiences and interests with others. Users are able to post community events on our event page or find teammates in their favorite games.  					
+				</div>
+				<div class="d-flex align-items-center project_links">					
+						<a href='https://314gb.github.io/'>Link to Github repositories</a>			
+				</div>
+			</div>
+	</div>
+
+	<div id='project' ></div>
+	<div class="row no-gutters project align-items-center">
+		<div class="col-12 col-md-5 ">
+			<div class="d-flex justify-content-center">
+				<img class='projectImg' src='img/HawaiiAlert.png'> 
+			</div>	
+		</div>
+		<div class="col-12 col-md-7">
+			<div class="project_text">
+				<h2>Hawaii Alert</h2>
+				Front-end heavy web group project. In case of disaster events such as tsunami, the user will select the appropriate message to be sent to the public. The goal of this project is to design and develop a UI/UX to minimize human error and avoid unnecessary public fear. Email and mobile text alert are used to send the message. 
+			</div>
+			<div class="d-flex align-items-center project_links">					
+				<a href='https://github.com/HawaiiAlert/HawaiiAlert'>Link to Github repositories</a>			
 			</div>
 		</div>
 	</div>
-	</section>
+	</div>
+	
 
+
+
+	<!--
 	<section  id="project">
 		<div class="container p-5 ">
 		<h2 class="pb-3">Class works/projects</h2>
@@ -196,6 +191,7 @@
 		</div>
 		</div>
 				</section>
+ -->
 
 	<section  id="contact">
 		<div class="container p-5 ">
@@ -208,10 +204,6 @@
 			data-placement="auto" title="Linkedin"> </a>
 	</div>
 	</section>
-
-	<footer class="footer">
-			Updated 2019
-	</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

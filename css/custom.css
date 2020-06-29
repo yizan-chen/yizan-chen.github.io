@@ -5,14 +5,17 @@ body {
 	background-color: rgb(53, 53, 53);
 	color: rgb(211, 211, 211);	
 }
-img{
-	padding-bottom: 20px;
-	
-}
 
 .navbar {
 	opacity:1;
+	background:rgba(0, 0, 0, 0) ;
+	height:60px;
+	transition: 1s ease;
+}
+
+.navbar.scrolled{
 	background:rgb(0, 0, 0) ;
+	height:60px;
 }
 
 .navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:focus {
@@ -34,29 +37,45 @@ img{
 	color: white ;
 }
 
-.front{
-	background:no-repeat url(../img/bg.jpg) ;
+.hero{
+	background: url(../img/bg.jpg) ;
 	background-size: cover;
-	height: auto;
+	height: 100vh;
+}
+
+.front{
+	background: url(../img/bg.jpg) ;
+	background-size: cover;
+	height:100vh;
 	color: white;
-	border-bottom: 1px solid white;
 }
 
 .intro{
 	color:white;
-	padding-top: 10%;
-	padding-bottom: 10%;
 }
 
+.project{
+	padding: 5px 5px 5px 5px;
+	border-top: solid rgb(167, 167, 167) 2px;
+}
 
-#education{
-	background-color: rgba(24, 24, 24, 0.863);
+.projectImg{
+	height: auto;
+	width: 80%;
 }
-#language{
-	background-color: rgb(85, 83, 83);
+
+.project_text{
+	min-height:20vh;
 }
-#project{
-	background-color:  rgba(24, 24, 24, 0.863);
+.project_links{
+	height:5vh;
+}
+h2{
+	padding-top: 3px;
+}
+
+#projects{
+	background-color:  rgb(102, 102, 102);
 }
 #contact{
 	background-color: rgba(0, 0, 0, 0.781);
@@ -100,3 +119,19 @@ a:hover, a:focus{
 .outline{
 	border: 2px solid rgba(0, 0, 0, 0.829);
 }
+
+.downarrow{
+	height: 30px;
+	width: 30px;
+}
+
+/*Animation*/
+.animation_1 {
+	animation: key_one 2s ease-in-out infinite;
+  }
+  
+  @keyframes key_one {
+	0% {transform: translate(0, 10px);}
+	50% {transform: translate(0, 0);}
+	100% {transform: translate(0, 10px);}
+  }
