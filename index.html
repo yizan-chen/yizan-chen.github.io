@@ -34,6 +34,7 @@
                 <a class="nav-item nav-link pointer" onclick="window.scrollTo(0,0)" >Home</a>
 								<a class="nav-item nav-link pointer" onclick="moveTo(projects)">Projects</a>
 								<a class="nav-item nav-link pointer" onclick="moveTo(contact)">Contact</a>
+								<a class="nav-item nav-link pointer" href="misc/resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
 	</nav>
@@ -51,18 +52,21 @@
 	<div id='projects'>
 		<div class="row no-gutters project align-items-center">
 			<div class="col-12 col-md-5 ">
-				<div class="d-flex justify-content-center ">
+				<div class="d-flex justify-content-center">
 					<img class='projectImg ' src='img/WarriorGamers.png'> 
 				</div>	
 			</div>
 			<div class="col-12 col-md-7">
+			<div class='container'>
 				<div class="project_text">
 					<h2>Warrior Gamers</h2>
 					Full stack web group project built with React and MangoDB. WarriorGamers let university students create personal portfolios to share their gaming experiences and interests with others. Users are able to post community events on our event page or find teammates in their favorite games.  					
 				</div>
-				<div class="d-flex align-items-center project_links">					
-						<a href='https://314gb.github.io/'>Link to Github repositories</a>			
-				</div>
+				<div class="d-flex align-items-center project_links" >					
+						<a class='project_link' href='https://314gb.github.io/' target="_blank">
+							Link to Github repositories</a>			
+				</div>									
+			</div>
 			</div>
 	</div>
 
@@ -74,124 +78,19 @@
 			</div>	
 		</div>
 		<div class="col-12 col-md-7">
+		<div class='container'>
 			<div class="project_text">
 				<h2>Hawaii Alert</h2>
 				Front-end heavy web group project. In case of disaster events such as tsunami, the user will select the appropriate message to be sent to the public. The goal of this project is to design and develop a UI/UX to minimize human error and avoid unnecessary public fear. Email and mobile text alert are used to send the message. 
 			</div>
 			<div class="d-flex align-items-center project_links">					
-				<a href='https://github.com/HawaiiAlert/HawaiiAlert'>Link to Github repositories</a>			
+					<a class='project_link' href='https://github.com/HawaiiAlert/HawaiiAlert' target="_blank">
+							Link to Github repositories</a>			
 			</div>
 		</div>
+		</div>
 	</div>
 	</div>
-	
-
-
-
-	<!--
-	<section  id="project">
-		<div class="container p-5 ">
-		<h2 class="pb-3">Class works/projects</h2>
-		<div class="accordion" id="accordion">
-			<div class="card">
-			  <div class="card-header pointer" id="headingOne">
-				  <div data-toggle="collapse" data-target="#collapseOne">
-					Warrior Gamers 
-					<i class="fas fa-angle-down"></i>
-				  </div>
-			  </div>
-			  <div id="collapseOne" class="collapse show" data-parent="#accordion">
-				<div class="card-body">
-					<p>
-						This is the final group project in the Software Engineering class. The objective of this project is to design and create a 
-						completely functional website following the code development cycle and concepts with Github. In the end, we created a gamer 
-						forum website that our university student can log in using their university account. Users of our site can create portfolios 
-						to share their gaming interests and find others with similar interests in the local community. The website will rank games by their 
-						popularity using our user database, and let’s user post real-life event on our site. Each member of the development team gain experience on both front-end and back-end.
-					</p>
-					<p>Keyword: Web, font-end, back-end, Github, JavaScript, HTML, Semantic UI, API</p>
-					<strong><a href="https://314gb.github.io/" class="card-link">Click to go to the project site</a></strong>
-				</div>
-			  </div>
-					</div>
-
-			<div class="card">
-					<div class="card-header pointer" id="headingTwo">
-						<div data-toggle="collapse" data-target="#collapseTwo">
-						  Hawaii Alert <i class="fas fa-angle-down"></i>
-						</div>
-					</div>
-					<div id="collapseTwo" class="collapse" data-parent="#accordion">
-					  <div class="card-body">
-						  <p> 
-									This is a group project in the Software Design class. This project was inspired by 
-									the false nuclear missile alert event in Hawaii, which created major panic and fear 
-									in the morning. The mistake was blamed on the bad UI design of the alert system and 
-									took them hours to sent clarification out after the false alert. So, our objective is 
-									to design a UI that will minimize human error and include to maximize response time 
-									to unexpected situations. Our end project was built on browser-based languages and agreed 
-									on a simple clear design. We did unit testing and implemented mobile text notification and
-									 email notification alert. I gained experience in product testing, UI design, and code development process.
-							</p>
-							<p>Keyword: Web, font-end, GUI, JavaScript, HTML, API, Testing</p>
-						<strong><a href="https://github.com/HawaiiAlert/HawaiiAlert" 
-						  class="card-link">Click to go to the project github repo</a></strong>
-					  </div>
-					</div>
-				  </div>
-
-			<div class="card">
-					<div class="card-header pointer" id="headingThree">
-						<div data-toggle="collapse" data-target="#collapseThree">
-						  Natural language processing AI <i class="fas fa-angle-down"></i>
-						</div>
-					</div>
-					<div id="collapseThree" class="collapse" data-parent="#accordion">
-					  <div class="card-body">
-							<p> 
-								This is a project in the AI programming class. The goal of this project is to create a 
-								specialized AI that can answer human question and response in the English language. 
-								In this project, the AI will be specialized in answering questions about movies and 
-								their actors. But due to the limited amount of time and data, the final product will 
-								be limited to answer questions about the selected three movies and three actors in each 
-								movie. The language process will accept what, who and four other types of questions and 
-								will answer questions about actor, director, title, and role in each movie asking in various way.  
-							</p>
-							<p>Keyword: AI, Prolog, Language Processing</p>
-						<strong><a href="https://github.com/yizanchen/ics361/tree/master/ass5" 
-						  class="card-link">Click to go to project the github repo</a></strong>
-					  </div>
-					</div>
-				  </div>	  
-			
-
-			<div class="card">
-					<div class="card-header pointer" id="headingFour">
-						<div data-toggle="collapse" data-target="#collapseFour">
-						  Support Vector Machine <i class="fas fa-angle-down"></i>
-						</div>
-					</div>
-					<div id="collapseFour" class="collapse" data-parent="#accordion">
-					  <div class="card-body">
-							<p>
-								This is a project in the Machine Learning class. The focus of the class was on Support 
-								Vector Machine, to learn how it works and different variation of it. SVM(Support Vector 
-								Machine) is an algorithm used to separate data into groups using a given training data. 
-								It is a very efficient way to automatic the process of sorting large amounts of data. 
-								But there are many variables in the algorithm and no one fits all model. So, for my 
-								project, I compared different degrees of kernels and log the effect of overfitting and 
-								underfitting the data. I learned how to apply cross-validation to find the best degree for my human-generated data.    
-							</p>	
-							<p>Keywork: Python, SVM, Data analysis, Matlab </p>
-						<strong><a href="https://github.com/yizanchen/ics435" 
-						  class="card-link">Click to go to the project github repo</a></strong>
-					  </div>
-					</div>
-					</div>
-		</div>
-		</div>
-				</section>
- -->
 
 	<section  id="contact">
 		<div class="container p-5 ">
